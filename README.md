@@ -1,9 +1,9 @@
 # GSoC2022
 
 ## Project Overview
-This project intends to improve the `RealSet` algorithm and implement `PiecewisePolynomial` for general purposes for SageMath. Considering the computational complexity, the efficient piece searching algorithm should also be designed, especially for the case of a large number of pieces being provided. 
+This project intends to improve the `RealSet` algorithm and implement `PiecewisePolynomial` for general purposes for SageMath. Considering the computational complexity, an efficient piece searching algorithm should also be designed, especially for the case of a large number of pieces being provided. 
 
-At the end of the project, we implement the piecewise function in real set . It is still in progress to adjust to the SageMath Module Element structure. SageMath now can calctute and plot function as following:
+At the end of the project, we implemented the piecewise function in real set . It is still in progress to adjust to the SageMath Module Element structure. SageMath now can calctute and plot function as following:
 
 ```
 sage: R.<t> = QQ[]
@@ -21,11 +21,9 @@ sage: p.plot()
 - [#34456](https://trac.sagemath.org/ticket/34456) Implement the piecewise polynomial on one dimension. Still working in progress to adpat the Module Element.
 
 ## Roadblocks encountered
-
-This project was harder than expect, becase:
-- Trac-Server was more complicated than I expected. I experienced permission denied all the time throughout GSoC
+- Trac-Server was more complicated than expectation. I experienced permission denied all the time throughout GSoC
 - It was not easy to adapt the suitable format of docstring and doctest while implementing.
-- In the implementation process, the code needs to be both readable and efficient, which is hard to do.
+- In the implementation process, the balance between code readability and efficiency turns out to be difficult.
 
 ## TODO
 - Adapt Vector Space for piecewise polynomial
